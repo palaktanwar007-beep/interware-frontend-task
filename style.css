@@ -1,0 +1,185 @@
+/* Page background */
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: url("https://i.postimg.cc/GtmS2cn8/internware-deer-forest-jpg.jpg") center/cover no-repeat fixed;
+}
+
+/* Login container */
+.login-container {
+    width: 300px;
+    padding: 30px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-out;
+    transition: background 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Entrance animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(35px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    color: #102b3a;
+}
+
+p {
+    color: #284b63;
+}
+
+/* Input fields */
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #4b91b8;
+    box-shadow: 0 0 8px rgba(75, 145, 184, 0.5);
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #102b3a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    background: #245675;
+}
+
+/* Login options */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+.options input {
+    width: auto;
+    margin: 0;
+}
+
+.options a,
+.login-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-container h2,
+.login-container p,
+.login-container label,
+.login-container a {
+    color: white;
+}
+
+/* Dashboard table */
+.login-container table {
+    width: 100%;
+    margin: 18px 0;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.login-container th,
+.login-container td {
+    padding: 12px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    text-align: left;
+    overflow-wrap: anywhere;
+    color: #fff;
+}
+
+.login-container th {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Dashboard text */
+.login-container:not(.light-mode) h2,
+.login-container:not(.light-mode) p {
+    color: #fff;
+}
+
+/* Light mode */
+.login-container.light-mode {
+    background: rgba(255, 255, 255, 0.96);
+    color: #172033;
+}
+
+.login-container.light-mode h2,
+.login-container.light-mode p,
+.login-container.light-mode th,
+.login-container.light-mode td {
+    color: #172033;
+}
+
+.login-container.light-mode th {
+    background: #e7f0f8;
+}
+
+.login-container.light-mode th,
+.login-container.light-mode td {
+    border-color: #c8d3df;
+}  /* Improve dashboard table readability */
+.login-container table {
+    background: rgba(10, 30, 45, 0.75);
+    border-radius: 10px;
+}
+
+.login-container th {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.2);
+    font-weight: bold;
+}
+
+.login-container td {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+/* Light theme table */
+.login-container.light-mode table {
+    background: #ffffff;
+}
+
+.login-container.light-mode th,
+.login-container.light-mode td {
+    color: #172033;
+}
